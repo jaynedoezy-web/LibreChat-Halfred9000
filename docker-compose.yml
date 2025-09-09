@@ -16,7 +16,7 @@ services:
       - "host.docker.internal:host-gateway"
     environment:
       - HOST=0.0.0.0
-      - MONGO_URI=mongodb://mongodb:27017/LibreChat
+      - MONGO_URI=mongodb+srv://jaynedoezy_db_user:zTTrUgezYobcgd4C@librechat-halfred9000.v55hevz.mongodb.net/?retryWrites=true&w=majority&appName=LibreChat-Halfred9000
       - MEILI_HOST=http://meilisearch:7700
       - RAG_PORT=${RAG_PORT:-8000}
       - RAG_API_URL=http://rag_api:${RAG_PORT:-8000}
